@@ -1,0 +1,44 @@
+.accomodation_items{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    width:90%;
+    margin: 50px auto;
+    padding:50px;
+    background-color: #F6F6F6;
+    border-radius:25px;
+    
+}
+
+.accomodation_card{
+    list-style: none;
+    width:30%;
+    height:340px;
+    position:relative;
+    margin-bottom:50px;
+    background-color:linear-gradient (rgb(255, 96, 96), rgb(168, 114, 107));
+    border-radius:10px;
+    padding:0px;
+}
+
+.accomodation_img:hover{
+    opacity:0.9;
+}
+.accomodation_title{
+    font-family:montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    color:rgba(255,255,255,1);
+    position:absolute;
+    bottom:0;
+    left:10px;
+}
+
+.accomodation_img{
+    width:100%;
+    box-sizing:border-box;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px;
+}
+

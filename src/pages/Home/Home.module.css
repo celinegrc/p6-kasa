@@ -1,0 +1,25 @@
+.banniere{
+    height:225px;
+    background-image: url('../../assets/images/mer.jpg');
+    background-size:cover;
+    background-position:center;
+    border-radius: 25px;
+    
+}
+
+
+.banniere_cover{
+    display:flex;
+    justify-content: center;
+    height:100%;
+    align-items:center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.5rem;
+    color: rgba(255,255,255,1);
+    font-weight:500;
+    background-color:rgba(0,0,0,0.3);
+    border-radius:25px;
+}
+
+
+
