@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from "react-router-dom";
 import { router } from "./RoutesPath.jsx"
+import './index.css'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div>
+    <div className = 'root'>
         <RouterProvider router={router} />
     </div>
   </React.StrictMode>

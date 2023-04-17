@@ -1,13 +1,16 @@
 .accomodation_items{
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-between;
-    width:90%;
-    margin: 50px auto;
-    padding:50px;
+    justify-content: center;
+    padding-left:0px;
     background-color: #F6F6F6;
     border-radius:25px;
-    
+    gap:40px; 
+    padding:30px 30px 30px 30px; 
+}
+
+.accomodation_container{
+    margin:50px;
 }
 
 .accomodation_card{
@@ -15,10 +18,8 @@
     width:30%;
     height:340px;
     position:relative;
-    margin-bottom:50px;
     background-color:linear-gradient (rgb(255, 96, 96), rgb(168, 114, 107));
     border-radius:10px;
-    padding:0px;
 }
 
 .accomodation_img:hover{

@@ -2,14 +2,16 @@ import {list} from '../../datas/accomodations-list.js'
 import { Link } from 'react-router-dom'
 import styles from './Card.module.css'
 
+
+
 function Card() {
     return (
-        <div>
+        <div className ={styles.accomodation_container}>
           <ul className ={styles.accomodation_items}>
-          {list.map(accomodation => (
-          <Link to ='/fiche-logement/Logements' key={accomodation.id} className ={styles.accomodation_card}>
-              <img className ={styles.accomodation_img} src= {accomodation.cover} alt={accomodation.title} />
-              <h2 className ={styles.accomodation_title}>   {accomodation.title}  </h2>
+          {list.map(({id, cover, title}) => (
+          <Link to ={`/fiche-logement/${id}`} key={id} className ={styles.accomodation_card}>
+              <img className ={styles.accomodation_img} src= {cover} alt={title} />
+              <h2 className ={styles.accomodation_title}>   {title}  </h2>
           </Link>
         ))}
           </ul> 
