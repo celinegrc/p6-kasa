@@ -1,3 +1,9 @@
+.home_container{
+    max-width: 1500px;
+    margin:0 auto;
+}
+
+
 .banniere{
     height:225px;
     background-image: url('../../assets/images/mer.jpg');
@@ -22,4 +28,25 @@
 }
 
 
+.accomodation_items{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-left:0px;
+    background-color: #F6F6F6;
+    border-radius:25px;
+    gap:40px; 
+    padding:30px 30px 30px 30px; 
+}
+
+
+
+.accomodation_container{
+    margin:50px;
+}
+ li{
+    list-style: none;
+    width:30%;
+    min-width:300px;
+ }
 

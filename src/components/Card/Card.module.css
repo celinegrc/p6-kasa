@@ -1,4 +1,4 @@
-.accomodation_items{
+/*.accomodation_items{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
@@ -8,14 +8,14 @@
     gap:40px; 
     padding:30px 30px 30px 30px; 
 }
-
+*/
 .accomodation_container{
     margin:50px;
 }
 
 .accomodation_card{
     list-style: none;
-    width:30%;
+    min-width:300px;
     height:340px;
     position:relative;
     background-color:linear-gradient (rgb(255, 96, 96), rgb(168, 114, 107));
@@ -24,6 +24,8 @@
 
 .accomodation_img:hover{
     opacity:0.9;
+    scale:1.01;
+    transition: 0.35s;
 }
 .accomodation_title{
     font-family:montserrat;

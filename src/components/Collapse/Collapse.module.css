@@ -1,0 +1,29 @@
+.collapse_title{
+    background-color: rgba(255, 96, 96, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 500;
+    font-family: montserrat;
+    width:80%;
+    margin: 50px auto;
+    padding:10px 15px;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.collapse_description{
+    background: rgba(246, 246, 246, 1);
+    color: rgba(255, 96, 96, 1);
+    font-size: 24px;
+    font-weight: 400;
+    font-family: montserrat;
+    width:80%;
+    margin: 50px auto;
+    padding:15px 15px;
+    border-radius:5px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
