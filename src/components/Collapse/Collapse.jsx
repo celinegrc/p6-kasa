@@ -15,7 +15,7 @@ function Collapse({collapseTitle , collapseDescription}){
             </div>
             {isOpen && (
             <div className={styles.collapse_description}>
-                <p>{collapseDescription}</p>
+                <div>{collapseDescription}</div>
             </div>)}
         </div>
     )

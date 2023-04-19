@@ -51,17 +51,31 @@
     min-width:300px;
  }
 
- @media (min-width : 815px) and ( max-width: 1200px){
+ @media (min-width : 845px) and ( max-width: 1200px){
     li{
         width:45%;
      }
  }
 
- @media (min-width : 651px) and ( max-width: 815px){
+ @media (min-width : 651px) and ( max-width: 844px){
     li{
         width:40%;
         min-width:200px;
      }
+     .banniere{
+        margin:20px;
+        height:111px;
+        border-radius:10px;
+    }
+
+    .banniere_cover{
+        font-size:1rem;
+        border-radius:10px;
+    }
+    .banniere_cover h1{
+        font-size:1.3rem;
+        margin-left: 20px;
+    }
  }
 
 

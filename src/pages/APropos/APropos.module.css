@@ -3,7 +3,10 @@
     margin:0 auto;
     margin-bottom:130px;
 }
-
+.collapses_container{
+    width:80%;
+    margin: auto;
+}
 .banniere{
     height:225px;
     background-image: url('../../assets/images/montagne.jpg');

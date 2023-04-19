@@ -6,7 +6,7 @@ function Header() {
     return (
       <div className={styles.header_container}>
         <header className={styles.header}>
-            <img src= { logo } alt ='logo de kasa'/>
+            <div className={styles.image_container}><img src= { logo } alt ='logo de kasa'/></div>
             <nav>
             <NavLink to="/"  className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
             Accueil

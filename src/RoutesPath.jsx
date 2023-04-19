@@ -6,6 +6,7 @@ import Error from './pages/Error404/Error404.jsx';
 import { createBrowserRouter } from 'react-router-dom'
 import Header from './components/Header/Header'
 
+
 export const router = createBrowserRouter([
   {
     path: '/',

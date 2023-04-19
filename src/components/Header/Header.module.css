@@ -29,13 +29,16 @@
   text-decoration: underline;
 }
 
-@media (max-width:650px) {
+@media (max-width:767px) {
   .header{
     margin:20px;
   }
   
-  .header img {
-    width:40%;
+  .image_container {
+    width:140px;
+  }
+  .image_container img{
+    width:100%;
   }
   .inactive {
     font-size:13px;
@@ -44,6 +47,9 @@
   .active{
     font-size:12px;
     padding-left:30px;
+  }
+  nav a{
+    white-space:nowrap;
   }
 }
 
@@ -54,9 +60,12 @@
   justify-content:space-between;
  }
 
- .header img {
-  width:50%;
+ .image_container {
+  width:100px;
   margin-bottom: 20px;
+}
+.image_container img{
+  width:100%;
 }
 .inactive {
   padding-left:0px;

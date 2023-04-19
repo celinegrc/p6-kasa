@@ -26,3 +26,19 @@
     justify-content:center;
     margin-top: 150px;
 }
+
+@media (max-width :767px){
+    .error_404{
+        font-size:96px;
+        margin-top: 200px;
+    }
+    .error_message{
+        font-size: 18px;
+        font-family:montserrat;
+    }
+    .link_error{
+        font-size: 14px;
+        margin-bottom:100px;
+        
+    }
+}
