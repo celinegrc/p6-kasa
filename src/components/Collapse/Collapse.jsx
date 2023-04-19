@@ -1,16 +1,22 @@
 import styles from './Collapse.module.css'
-import dropdown_collapse from '../../assets/images/dropdown_collapse.png'
+import { useState } from "react";
+import arrow_open from '../../assets/images/arrow_open.png'
+import arrow_close from '../../assets/images/arrow_close.png'
 
 function Collapse({collapseTitle , collapseDescription}){
+    const [isOpen, setIsOpen] = useState(false)
+
     return(
         <div className={styles.collapse_container}>
-            <div className={styles.collapse_title}>
+            <div  onClick={() => setIsOpen(prevState => !prevState)} className={styles.collapse_title}>
                 {collapseTitle}
-                <img src ={dropdown_collapse} alt='' />
+                <img  src = { isOpen ? arrow_close : arrow_open}
+                alt='' />
             </div>
+            {isOpen && (
             <div className={styles.collapse_description}>
-                {collapseDescription}
-            </div>
+                <p>{collapseDescription}</p>
+            </div>)}
         </div>
     )
 }

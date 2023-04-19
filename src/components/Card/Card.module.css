@@ -1,21 +1,10 @@
-/*.accomodation_items{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    padding-left:0px;
-    background-color: #F6F6F6;
-    border-radius:25px;
-    gap:40px; 
-    padding:30px 30px 30px 30px; 
-}
-*/
+
 .accomodation_container{
     margin:50px;
 }
 
 .accomodation_card{
     list-style: none;
-    min-width:300px;
     height:340px;
     position:relative;
     background-color:linear-gradient (rgb(255, 96, 96), rgb(168, 114, 107));
@@ -44,4 +33,34 @@
     object-fit:cover;
     border-radius:10px;
 }
+/*@media (min-width : 815px) and ( max-width: px){
+    
+ }*/
 
+@media (min-width : 651px) and ( max-width: 815px){
+    .accomodation_img{
+        width:100%;
+        box-sizing:border-box;
+        height:100%;
+        object-fit:cover;
+        border-radius:10px;
+    }
+    .accomodation_card{
+        height:255px;
+    }
+}
+@media (max-width :650px) {
+    .accomodation_card{
+        height:255px;
+    }
+    .accomodation_container{
+        margin:20px;
+    }
+    .accomodation_title{
+        font-size: 16px;
+        font-weight: 500;
+        padding:5px;
+    }
+    
+
+}

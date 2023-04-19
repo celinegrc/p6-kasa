@@ -44,9 +44,52 @@
 .accomodation_container{
     margin:50px;
 }
+
  li{
     list-style: none;
     width:30%;
     min-width:300px;
  }
 
+ @media (min-width : 815px) and ( max-width: 1200px){
+    li{
+        width:45%;
+     }
+ }
+
+ @media (min-width : 651px) and ( max-width: 815px){
+    li{
+        width:40%;
+        min-width:200px;
+     }
+ }
+
+
+ @media (max-width :650px) {
+    li{
+       min-width:100%;
+        
+     }
+     .accomodation_container{
+        margin:20px;
+    }
+    .accomodation_items{
+        gap:20px; 
+        padding:0px;
+        background-color: #ffffff;
+    }
+    .banniere{
+        margin:20px;
+        height:111px;
+        border-radius:10px;
+    }
+
+    .banniere_cover{
+        font-size:1rem;
+        border-radius:10px;
+    }
+    .banniere_cover h1{
+        font-size:1.3rem;
+        margin-left: 20px;
+    }
+ }

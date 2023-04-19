@@ -1,4 +1,21 @@
 .logements_container{
     max-width: 1500px;
-    margin:0 auto;
+}
+
+.equipment_container p{
+   margin:3px;
+}
+
+.collapse_container{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.collapse_equipment{
+    flex:1;
+}
+
+.collapse_description{
+    flex:1;
 }

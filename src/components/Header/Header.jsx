@@ -4,7 +4,8 @@ import styles from  './Header.module.css'
 
 function Header() {
     return (
-        <div className={styles.header}>
+      <div className={styles.header_container}>
+        <header className={styles.header}>
             <img src= { logo } alt ='logo de kasa'/>
             <nav>
             <NavLink to="/"  className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
@@ -14,7 +15,8 @@ function Header() {
             A propos
           </NavLink>
             </nav>
-    </div>
+    </header>
+    </ div>
   )
 }
 

@@ -6,11 +6,12 @@ import { router } from "./RoutesPath.jsx"
 import Footer from './components/Footer/Footer.jsx'
 import './index.css'
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div className = 'root'>
+      <main>
         <RouterProvider router={router} />
+      </main>
         <Footer />
     </div>
   </React.StrictMode>

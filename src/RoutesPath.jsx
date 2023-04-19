@@ -4,23 +4,44 @@ import Home from './pages/Home/Home.jsx';
 import APropos from './pages/APropos/APropos.jsx';
 import Error from './pages/Error404/Error404.jsx';
 import { createBrowserRouter } from 'react-router-dom'
+import Header from './components/Header/Header'
 
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
+     element : (
+      <>
+        <Header />
+        <Home />
+      </>
+    ),
   },
   {
     path: "/fiche-logement/:id",
-    element: <Logements />,
+    element : (
+      <>
+        <Header />
+        <Logements />
+      </>
+    ),
   },
   {
     path: "/a-propos",
-    element: <APropos />,
+    element : (
+      <>
+        <Header />
+        <APropos />
+      </>
+    ),
   },
   {
     path: "/*",
-    element: <Error />,
+    element : (
+      <>
+        <Header />
+        <Error />
+      </>
+    ),
   }
 ])
 

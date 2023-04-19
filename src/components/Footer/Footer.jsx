@@ -5,10 +5,10 @@ import styles from './Footer.module.css'
 
 function Footer() {
     return(
-        <div className ={styles.footer}>
+        <footer className ={styles.footer}>
             <img src= { logo_footer } alt ='logo de kasa'/>
             <img src= { all_rights} alt ='logo de kasa'/>
-        </div>
+        </footer>
     )
 }
 
