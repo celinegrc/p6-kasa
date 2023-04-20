@@ -12,18 +12,16 @@
 }
 .inactive {
   color: rgba(255, 96, 96, 1);
-  font-family: 'Montserrat', sans-serif;
   font-weight:500;
-  font-size:24px;
+  font-size: 1.5rem;
   text-decoration: none;
   padding-left:50px;
 }
 
 .active{
   color: rgba(255, 96, 96, 1);
-  font-family: 'Montserrat', sans-serif;
   font-weight:500;
-  font-size:24px;
+  font-size: 1.5rem;
   text-decoration: none;
   padding-left:50px;
   text-decoration: underline;
@@ -41,11 +39,9 @@
     width:100%;
   }
   .inactive {
-    font-size:13px;
     padding-left:30px;
   }
   .active{
-    font-size:12px;
     padding-left:30px;
   }
   nav a{

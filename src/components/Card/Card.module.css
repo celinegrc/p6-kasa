@@ -10,37 +10,34 @@
     background-color:linear-gradient (rgb(255, 96, 96), rgb(168, 114, 107));
     border-radius:10px;
 }
+.accomodation_img{
+    transition:scale 0.5s;
+}
 
 .accomodation_img:hover{
-    opacity:0.9;
-    scale:1.01;
-    transition: 0.35s;
+    scale: 1.02;
 }
+
 .accomodation_title{
-    font-family:montserrat;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
     color:rgba(255,255,255,1);
     position:absolute;
     bottom:0;
-    left:10px;
+    margin:15px 10px;
 }
 
 .accomodation_img{
     width:100%;
-    box-sizing:border-box;
     height:100%;
     object-fit:cover;
     border-radius:10px;
 }
-/*@media (min-width : 815px) and ( max-width: px){
-    
- }*/
 
-@media (min-width : 651px) and ( max-width: 845px){
+
+@media (min-width : 768px) and ( max-width: 845px){
     .accomodation_img{
         width:100%;
-        box-sizing:border-box;
         height:100%;
         object-fit:cover;
         border-radius:10px;
@@ -49,7 +46,8 @@
         height:255px;
     }
 }
-@media (max-width :650px) {
+
+@media (max-width :767px) {
     .accomodation_card{
         height:255px;
     }
@@ -57,10 +55,8 @@
         margin:20px;
     }
     .accomodation_title{
-        font-size: 16px;
+        font-size: 1.7rem;
         font-weight: 500;
         padding:5px;
-    }
-    
-
+    } 
 }

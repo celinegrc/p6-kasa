@@ -1,10 +1,8 @@
 .collapse_title{
     background-color: rgba(255, 96, 96, 1);
     color: rgba(255, 255, 255, 1);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
-    font-family: montserrat;
-    /*width:80%;*/
     margin: 50px auto 0px auto;
     padding:10px 15px;
     border-radius:5px;
@@ -22,10 +20,8 @@
 .collapse_description{
     background: rgba(246, 246, 246, 1);
     color: rgba(255, 96, 96, 1);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
-    font-family: montserrat;
-    /*width:80%;*/
     margin: 0px auto;
     padding:20px 15px 15px 15px;
     border-radius:5px;
@@ -35,11 +31,10 @@
 }
 
 
-@media (max-width : 768px){
-    .collapse_title{
-        font-size: 16px;
+@media (max-width :768px){
+    .collapse_description, .collapse_title{
+    font-size: 1.8rem;
     }
-    .collapse_description{
-        font-size: 16px
-    }
-}    
+}
+
+  

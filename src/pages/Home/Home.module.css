@@ -19,7 +19,6 @@
     justify-content: center;
     height:100%;
     align-items:center;
-    font-family: 'Montserrat', sans-serif;
     font-size:1.5rem;
     color: rgba(255,255,255,1);
     font-weight:500;
@@ -69,11 +68,10 @@
     }
 
     .banniere_cover{
-        font-size:1rem;
         border-radius:10px;
     }
+
     .banniere_cover h1{
-        font-size:1.3rem;
         margin-left: 20px;
     }
  }
@@ -99,11 +97,9 @@
     }
 
     .banniere_cover{
-        font-size:1rem;
         border-radius:10px;
     }
     .banniere_cover h1{
-        font-size:1.3rem;
-        margin-left: 20px;
+        margin:0 20px;
     }
  }
