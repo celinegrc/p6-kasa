@@ -1,6 +1,6 @@
 import Card from '../../components/Card/Card.jsx';
 import styles from './Home.module.css'
-import {list} from '../../datas/accomodationsList.js'
+import list from '../../datas/accomodationsList.json'
 
 function Home() {
   return (

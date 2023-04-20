@@ -1,4 +1,4 @@
-import { list } from '../../datas/accomodationsList.js';
+import  list  from '../../datas/accomodationsList.json';
 import { useParams, Navigate } from 'react-router-dom';
 import styles from './Logements.module.css';
 import Tag from '../../components/Tag/Tag.jsx';
