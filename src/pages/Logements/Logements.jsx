@@ -17,14 +17,14 @@ function Logements() {
   const tags = accomodation.tags;
   const equipements = accomodation.equipments;
   const hostPicture = accomodation.host.picture;
-  const pictureslist = accomodation.pictures;
+  const picturesList = accomodation.pictures;
   const picturesLength = accomodation.pictures.length;
   const ratingNumber = accomodation.rating;
 
   return (
     <section className={styles.logements_container}>
-      <Slideshow pictures={pictureslist} picturesLength={picturesLength}/>
-      <section className={styles.accomodation_details}>
+      <Slideshow pictures={picturesList} picturesLength={picturesLength}/>
+      <article className={styles.accomodation_details}>
         <div>
           <h1 className={styles.accomodation_title}>{accomodation.title}</h1>
           <p className={styles.accomodation_location}>{accomodation.location}</p>
@@ -41,11 +41,10 @@ function Logements() {
           </div>
           <div>
             <Rating ratingNumber={ratingNumber}/>
-            {/*<p>{ratingNumber}</p>*/}
           </div>
         </div>
-      </section>
-      <div className={styles.collapse_container}>
+      </article>
+      <article className={styles.collapse_container}>
         <div className={styles.collapse_description}>
           <Collapse 
             collapseTitle={<div className={styles.logements_collapse_title}>Description</div>}
@@ -64,7 +63,7 @@ function Logements() {
             }
           />
         </div>
-      </div>
+      </article>
     </section>
   );
 }

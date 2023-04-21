@@ -17,24 +17,16 @@
 
 .link_error{
     color: rgba(255, 96, 96, 1);
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     font-weight: 500;
     display:flex;
     justify-content:center;
     margin-top: 150px;
+    margin-bottom:100px;
 }
 
 @media (max-width :767px){
     .error_404{
-      /*  font-size:6rem;*/
         margin-top: 200px;
-    }
-    .error_message{
-      /*  font-size: 1.125rem;*/
-    }
-    .link_error{
-      /*  font-size: 0.875rem;*/
-        margin-bottom:100px;
-        
     }
 }

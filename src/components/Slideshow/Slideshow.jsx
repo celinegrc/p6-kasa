@@ -4,28 +4,19 @@ import arrowLeft from '../../assets/images/arrow_left.png';
 import arrowRight from '../../assets/images/arrow_right.png';
 
 function Slideshow({ pictures, picturesLength }) {
-  const prevImg = (index) => {
-    if (index > 0) {
-      setIndex(index - 1);
-    } else {
-      setIndex((index = pictures.length - 1));
-    }
-  };
-
-  const nextImg = (index) => {
-    if (index < picturesLength - 1) {
-      setIndex(index + 1);
-      
-    } else {
-      setIndex((index = 0));
-    }
-  };
-
   const [index, setIndex] = useState(0);
 
+  const prevImg = (index) => {
+    index > 0 ? setIndex(index-1) : setIndex ((index = pictures.length -1 ))
+  }
+
+  const nextImg = (index) => {
+    index < (picturesLength - 1) ? setIndex (index + 1) :  setIndex((index = 0))
+  }
+ 
   return (
     <div className={styles.carrousel_container}>
-      <img className={styles.carrousel_image} src={pictures[index]} alt="" key = {`${index}`} />
+      <img className={styles.carrousel_image} src={pictures[index]} alt="intérieur du logement" key = {`${index}`} />
 
       {picturesLength > 1 && (
         <>
@@ -33,13 +24,13 @@ function Slideshow({ pictures, picturesLength }) {
             <img
               className={styles.arrow_left}
               src={arrowLeft}
-              alt=""
+              alt="flêche vers la gauche"
               onClick={() => prevImg(index)}
             />
             <img
               className={styles.arrow_right}
               src={arrowRight}
-              alt=""
+              alt="flêche vers la droite"
               onClick={() => nextImg(index)}
             />
           </div>

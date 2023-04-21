@@ -8,3 +8,8 @@
     align-items: center;
     margin-top:50px;
 }
+
+.footer p{
+    color: #ffffff;
+    font-size: 1.5rem;
+}

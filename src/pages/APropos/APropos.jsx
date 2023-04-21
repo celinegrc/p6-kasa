@@ -1,6 +1,6 @@
-import styles from './APropos.module.css'
+import styles from './APropos.module.css';
 import Collapse from '../../components/Collapse/Collapse.jsx';
-import collapseData from '../../datas/collapseData.js'
+import collapseData from '../../datas/collapseData.js';
 
 function APropos() {
     return (
@@ -8,8 +8,12 @@ function APropos() {
             <div className={styles.banniere}></div>
             <div className={styles.collapses_container}>
                 {collapseData.map(({title, description},index) => (
-                <Collapse  key = {`${title}-${index}`} collapseTitle= {<p>{title}</p>} collapseDescription = {description}/>)
-                )}
+                    <Collapse  
+                    key = {`${title}-${index}`} 
+                    collapseTitle= {<p>{title}</p>} 
+                    collapseDescription = {description}
+                    />
+                ))}
             </div> 
         </div>
     );

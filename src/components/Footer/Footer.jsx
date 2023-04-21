@@ -1,15 +1,14 @@
-import logo_footer from '../../assets/images/logo_footer.png'
-import all_rights from '../../assets/images/all_rights_reserved.png'
-import styles from './Footer.module.css'
+import logo_footer from '../../assets/images/logo_footer.png';
+import styles from './Footer.module.css';
 
 
 function Footer() {
     return(
         <footer className ={styles.footer}>
             <img src= { logo_footer } alt ='logo de kasa'/>
-            <img src= { all_rights} alt ='logo de kasa'/>
+            <p>© 2023 Kasa. All rights reserved</p>
         </footer>
     )
 }
 
-export default Footer
+export default Footer;
