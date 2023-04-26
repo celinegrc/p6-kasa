@@ -6,12 +6,14 @@
   text-decoration: none;
   margin:50px;
 }
+
 .header_container{
   max-width:1500px;
   margin:0 auto;
 }
+
 .inactive {
-  color: rgba(255, 96, 96, 1);
+  color: rgb(255, 96, 96, 1);
   font-weight:500;
   font-size: 1.5rem;
   text-decoration: none;

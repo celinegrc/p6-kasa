@@ -1,7 +1,6 @@
 import logo_footer from '../../assets/images/logo_footer.png';
 import styles from './Footer.module.css';
 
-
 function Footer() {
     return(
         <footer className ={styles.footer}>

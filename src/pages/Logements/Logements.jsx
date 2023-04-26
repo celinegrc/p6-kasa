@@ -22,7 +22,7 @@ function Logements() {
   const ratingNumber = accomodation.rating;
 
   return (
-    <section className={styles.logements_container}>
+    <main className={styles.logements_container}>
       <Slideshow pictures={picturesList} picturesLength={picturesLength}/>
       <article className={styles.accomodation_details}>
         <div>
@@ -64,7 +64,7 @@ function Logements() {
           />
         </div>
       </article>
-    </section>
+    </main>
   );
 }
 

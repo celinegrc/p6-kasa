@@ -1,7 +1,6 @@
 import styles from './Collapse.module.css';
 import { useState } from "react";
 import arrow_open from '../../assets/images/arrow_open.png';
-import arrow_close from '../../assets/images/arrow_close.png';
 
 function Collapse({collapseTitle , collapseDescription}){
     const [isOpen, setIsOpen] = useState(false)
@@ -11,9 +10,9 @@ function Collapse({collapseTitle , collapseDescription}){
 
     return(
         <div className={styles.collapse_container}>
-            <div  onClick={() =>handleClick() } className={styles.collapse_title}>
+            <div  onClick={() =>handleClick() } className={isOpen ?`${styles.collapse_title_open}`:`${styles.collapse_title_closed}` }>
                 {collapseTitle}
-                <img  src = { isOpen ? arrow_close : arrow_open}
+                <img  src = {arrow_open} className={isOpen ?`${styles.arrow_up}`:`${styles.arrow_down}`}
                 alt='ouvrir ou fermer la section' />
             </div>
             {isOpen && (

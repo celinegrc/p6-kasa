@@ -4,7 +4,7 @@ import list from '../../datas/accomodationsList.json';
 
 function Home() {
   return (
-    <section className={styles.home_container}>
+    <main className={styles.home_container}>
       <div className={styles.banniere}>
         <div className={styles.banniere_cover}><h1>Chez vous, partout et ailleurs</h1></div> 
       </div>
@@ -15,7 +15,7 @@ function Home() {
           ))}
         </ul>
       </article>
-    </section>
+    </main>
   );
 }
 

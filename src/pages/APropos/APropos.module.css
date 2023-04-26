@@ -16,9 +16,11 @@
     margin:50px;
 }
 
-p{
+.title_collapse_apropos{
     margin-top:0px;
     margin-bottom:0px;
+    font-size:1.3rem;
+    font-weight: 500;
 }
 
 @media (max-width:650px) {

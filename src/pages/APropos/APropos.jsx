@@ -4,18 +4,18 @@ import collapseData from '../../datas/collapseData.js';
 
 function APropos() {
     return (
-        <div className={styles.a_propos_container}>
+        <main className={styles.a_propos_container}>
             <div className={styles.banniere}></div>
             <div className={styles.collapses_container}>
                 {collapseData.map(({title, description},index) => (
-                    <Collapse  
+                    <Collapse 
                     key = {`${title}-${index}`} 
-                    collapseTitle= {<p>{title}</p>} 
+                    collapseTitle= {<h2 className={styles.title_collapse_apropos}>{title}</h2>} 
                     collapseDescription = {description}
                     />
                 ))}
             </div> 
-        </div>
+        </main>
     );
 }
 

@@ -24,13 +24,13 @@ function Slideshow({ pictures, picturesLength }) {
             <img
               className={styles.arrow_left}
               src={arrowLeft}
-              alt="flêche vers la gauche"
+              alt="flèche vers la gauche"
               onClick={() => prevImg(index)}
             />
             <img
               className={styles.arrow_right}
               src={arrowRight}
-              alt="flêche vers la droite"
+              alt="flèche vers la droite"
               onClick={() => nextImg(index)}
             />
           </div>
