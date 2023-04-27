@@ -1,10 +1,10 @@
-import styles from './Slideshow.module.css';
-import { useState } from 'react';
-import arrowLeft from '../../assets/images/arrow_left.png';
-import arrowRight from '../../assets/images/arrow_right.png';
+import styles from './Slideshow.module.css'
+import { useState } from 'react'
+import arrowLeft from '../../assets/images/arrow_left.png'
+import arrowRight from '../../assets/images/arrow_right.png'
 
 function Slideshow({ pictures, picturesLength }) {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0)
 
   const prevImg = (index) => {
     index > 0 ? setIndex(index-1) : setIndex ((index = pictures.length -1 ))
@@ -40,7 +40,7 @@ function Slideshow({ pictures, picturesLength }) {
         </>
       )}
     </div>
-  );
+  )
 }
 
-export default Slideshow;
+export default Slideshow

@@ -1,6 +1,6 @@
-import styles from './Collapse.module.css';
-import { useState } from "react";
-import arrow_open from '../../assets/images/arrow_open.png';
+import styles from './Collapse.module.css'
+import { useState } from "react"
+import arrow_open from '../../assets/images/arrow_open.png'
 
 function Collapse({collapseTitle , collapseDescription}){
     const [isOpen, setIsOpen] = useState(false)
@@ -24,4 +24,4 @@ function Collapse({collapseTitle , collapseDescription}){
     )
 }
 
-export default Collapse;
+export default Collapse

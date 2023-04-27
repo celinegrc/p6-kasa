@@ -1,4 +1,4 @@
-import styles from './Tag.module.css';
+import styles from './Tag.module.css'
 
 function Tag({tagName}){
     return (
@@ -8,4 +8,4 @@ function Tag({tagName}){
     )
 }
 
-export default Tag;
+export default Tag

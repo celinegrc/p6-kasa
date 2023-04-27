@@ -1,6 +1,6 @@
-import Card from '../../components/Card/Card.jsx';
-import styles from './Home.module.css';
-import list from '../../datas/accomodationsList.json';
+import Card from '../../components/Card/Card.jsx'
+import styles from './Home.module.css'
+import list from '../../datas/accomodationsList.json'
 
 function Home() {
   return (
@@ -16,7 +16,7 @@ function Home() {
         </ul>
       </article>
     </main>
-  );
+  )
 }
 
-export default Home;
+export default Home

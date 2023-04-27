@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import styles from './Card.module.css';
+import { Link } from 'react-router-dom'
+import styles from './Card.module.css'
 
 function Card({id, cover, title}) {
   return (
@@ -10,6 +10,6 @@ function Card({id, cover, title}) {
           </Link>
      </div>
       
-    );
+    )
 }
-export default Card;
+export default Card

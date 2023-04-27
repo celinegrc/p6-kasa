@@ -1,5 +1,5 @@
-import logo_footer from '../../assets/images/logo_footer.png';
-import styles from './Footer.module.css';
+import logo_footer from '../../assets/images/logo_footer.png'
+import styles from './Footer.module.css'
 
 function Footer() {
     return(
@@ -10,4 +10,4 @@ function Footer() {
     )
 }
 
-export default Footer;
+export default Footer

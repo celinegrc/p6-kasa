@@ -1,6 +1,6 @@
-import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/logo.png';
-import styles from  './Header.module.css';
+import { NavLink } from 'react-router-dom'
+import logo from '../../assets/images/logo.png'
+import styles from  './Header.module.css'
 
 function Header() {
     return (
@@ -22,7 +22,7 @@ function Header() {
     )
 }
 
-export default Header;
+export default Header
 
 
 

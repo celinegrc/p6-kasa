@@ -1,25 +1,25 @@
-import  list  from '../../datas/accomodationsList.json';
-import { useParams, Navigate } from 'react-router-dom';
-import styles from './Logements.module.css';
-import Tag from '../../components/Tag/Tag.jsx';
-import Collapse from '../../components/Collapse/Collapse.jsx';
-import Slideshow from '../../components/Slideshow/Slideshow.jsx';
-import Rating from '../../components/Rating/Rating.jsx';
+import  list  from '../../datas/accomodationsList.json'
+import { useParams, Navigate } from 'react-router-dom'
+import styles from './Logements.module.css'
+import Tag from '../../components/Tag/Tag.jsx'
+import Collapse from '../../components/Collapse/Collapse.jsx'
+import Slideshow from '../../components/Slideshow/Slideshow.jsx'
+import Rating from '../../components/Rating/Rating.jsx'
 
 function Logements() {
-  const { id } = useParams();
-  const accomodation = list.find(accomodation => accomodation.id === id);
+  const { id } = useParams()
+  const accomodation = list.find(accomodation => accomodation.id === id)
 
   if (!accomodation) {
-    return <Navigate to="/404" />;
+    return <Navigate to="/404" />
   }
 
-  const tags = accomodation.tags;
-  const equipements = accomodation.equipments;
-  const hostPicture = accomodation.host.picture;
-  const picturesList = accomodation.pictures;
-  const picturesLength = accomodation.pictures.length;
-  const ratingNumber = accomodation.rating;
+  const tags = accomodation.tags
+  const equipements = accomodation.equipments
+  const hostPicture = accomodation.host.picture
+  const picturesList = accomodation.pictures
+  const picturesLength = accomodation.pictures.length
+  const ratingNumber = accomodation.rating
 
   return (
     <main className={styles.logements_container}>
@@ -57,7 +57,7 @@ function Logements() {
             collapseDescription={
             <div className={styles.equipment_container}>
               {equipements.map((equipment) => (
-                <p key={`${accomodation.id}-${equipment}`}>{equipment}</p>
+                <p key={`${accomodation.id}-${equipment}`} className={styles.accomodation_equipments_list}>{equipment}</p>
               ))}
             </div>
             }
@@ -65,8 +65,8 @@ function Logements() {
         </div>
       </article>
     </main>
-  );
+  )
 }
 
-export default Logements;
+export default Logements
 

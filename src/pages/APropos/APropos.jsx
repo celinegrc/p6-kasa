@@ -1,6 +1,6 @@
-import styles from './APropos.module.css';
-import Collapse from '../../components/Collapse/Collapse.jsx';
-import collapseData from '../../datas/collapseData.js';
+import styles from './APropos.module.css'
+import Collapse from '../../components/Collapse/Collapse.jsx'
+import collapseData from '../../datas/collapseData.js'
 
 function APropos() {
     return (
@@ -16,7 +16,7 @@ function APropos() {
                 ))}
             </div> 
         </main>
-    );
+    )
 }
 
-export default APropos;
+export default APropos
