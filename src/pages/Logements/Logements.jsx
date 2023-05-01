@@ -1,5 +1,6 @@
 import  list  from '../../datas/accomodationsList.json'
 import { useParams, Navigate } from 'react-router-dom'
+import { useEffect } from 'react'
 import styles from './Logements.module.css'
 import Tag from '../../components/Tag/Tag.jsx'
 import Collapse from '../../components/Collapse/Collapse.jsx'
@@ -7,6 +8,13 @@ import Slideshow from '../../components/Slideshow/Slideshow.jsx'
 import Rating from '../../components/Rating/Rating.jsx'
 
 function Logements() {
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []); 
+
+ 
   const { id } = useParams()
   const accomodation = list.find(accomodation => accomodation.id === id)
 

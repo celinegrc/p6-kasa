@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 function Error() {
     return (
-        <div>
+        <div className={styles.error_container}>
             <p className ={styles.error_404}>  404 </p>
             <p className ={styles.error_message}> Oups ! La page que vous demandez n'existe pas. </p>
             <Link className = {styles.link_error} to="/" > Retourner à l'accueil </Link>

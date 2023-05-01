@@ -1,14 +1,17 @@
 .root
 {
-  margin: 0;
+  margin: 0 auto;
+  align-items:center;
   font-family: 'Montserrat', sans-serif;
   box-sizing:border-box;
+  min-height:100vh;
+  display:flex;
+  flex-direction: column;
 }
 
 body{
   margin:0;
 }
-
 
 @media (max-width:767px){
   html{

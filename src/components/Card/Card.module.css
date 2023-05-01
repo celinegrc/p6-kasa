@@ -1,4 +1,3 @@
-
 .accomodation_container{
     margin:50px;
 }
@@ -11,9 +10,6 @@
     border-radius:10px;
     transition: all 0.5s;
 }
-.accomodation_img{
-    transition:scale 0.5s;
-}
 
 .accomodation_title{
     font-size: 1.2rem;
@@ -24,18 +20,19 @@
     margin:15px 10px;
 }
 
-.accomodation_img:hover{
-    animation: pulse 1.5s 1;
-    box-shadow: 0 0 15px 4px   rgb(158, 151, 151);
-}
-
-
 .accomodation_img{
     width:100%;
     height:100%;
     object-fit:cover;
     border-radius:10px;
 }
+
+.accomodation_img:hover{
+    animation: pulse 1.5s infinite;
+    box-shadow: 0 0 15px 4px   rgb(158, 151, 151);
+}
+
+
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 15px 3px   rgb(192, 181, 181);
@@ -51,18 +48,6 @@
 	}
 }
 
-@media (min-width : 768px) and ( max-width: 845px){
-    .accomodation_img{
-        width:100%;
-        height:100%;
-        object-fit:cover;
-        border-radius:10px;
-    }
-    .accomodation_card{
-        height:255px;
-    }
-}
-
 @media (max-width :767px) {
     .accomodation_card{
         height:255px;
@@ -71,7 +56,7 @@
         margin:20px;
     }
     .accomodation_title{
-        font-size: 1.7rem;
+        font-size: 2rem;
         font-weight: 500;
         padding:5px;
     } 

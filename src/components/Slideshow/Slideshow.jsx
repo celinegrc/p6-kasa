@@ -16,23 +16,24 @@ function Slideshow({ pictures, picturesLength }) {
  
   return (
     <div className={styles.carrousel_container}>
-      <img className={styles.carrousel_image} src={pictures[index]} alt="intérieur du logement" key = {`${index}`} />
+      <img className={styles.carrousel_image} src={pictures[index]} alt="intérieur du logement" key = {`slideshow-${index}`} />
 
       {picturesLength > 1 && (
         <>
-          <div className={styles.arrow_container}>
-            <img
-              className={styles.arrow_left}
-              src={arrowLeft}
-              alt="flèche vers la gauche"
-              onClick={() => prevImg(index)}
-            />
-            <img
-              className={styles.arrow_right}
-              src={arrowRight}
-              alt="flèche vers la droite"
-              onClick={() => nextImg(index)}
-            />
+          <div className={styles.arrow_container}  >
+            <button onClick={() => prevImg(index)}>
+              <img
+                className={styles.arrow_left}
+                src={arrowLeft}
+                alt="flèche vers la gauche"
+              />
+            </button>
+            <button   onClick={() => nextImg(index)}>
+              <img className={styles.arrow_right}
+                src={arrowRight}
+                alt="flèche vers la droite"
+              />
+            </button>
           </div>
           <p className={styles.carrousel_number}>
             {index + 1} / {picturesLength}

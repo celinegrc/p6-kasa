@@ -6,11 +6,12 @@ function Collapse({collapseTitle , collapseDescription}){
     const [isOpen, setIsOpen] = useState(false)
 
     const handleClick = ()=>{ 
-        setIsOpen(prevState => !prevState)}
+        setIsOpen(!isOpen)
+    }
 
     return(
         <div className={styles.collapse_container}>
-            <div  onClick={() =>handleClick() } className={isOpen ?`${styles.collapse_title_open}`:`${styles.collapse_title_closed}` }>
+            <div  onClick={handleClick} className={isOpen ?`${styles.collapse_title_open}`:`${styles.collapse_title_closed}` }>
                 {collapseTitle}
                 <img  src = {arrow_open} className={isOpen ?`${styles.arrow_up}`:`${styles.arrow_down}`}
                 alt='ouvrir ou fermer la section' />

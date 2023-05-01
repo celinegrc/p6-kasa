@@ -7,13 +7,12 @@ function Rating({ratingNumber}){
 
     for (let i = 0; i <ratingNumber; i++) {
         ratingStar.push(
-            <img src={redStar} alt={`${ratingNumber} étoiles`} />
+            <img src={redStar} alt={`${ratingNumber} étoiles`} key={`red-star-${i}`}/>
         )
     }
     for (let i=0; i <5-ratingNumber; i++){
         ratingStar.push(
-            <img src={greyStar} alt={`${ratingNumber} étoiles`} />
-            
+            <img src={greyStar} alt={`${ratingNumber} étoiles`} key={`grey-star-${i}`} />  
         )
     }
 

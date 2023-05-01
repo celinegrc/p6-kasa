@@ -3,7 +3,6 @@
     margin:0 auto;
 }
 
-
 .banniere{
     height:225px;
     background-image: url('../../assets/images/mer.jpg');
@@ -15,7 +14,7 @@
 
 
 .banniere_cover{
-    display:flex;
+    display:grid;
     justify-content: center;
     height:100%;
     align-items:center;
@@ -28,7 +27,8 @@
 
 
 .accomodation_items{
-    display:flex;
+   grid-template-columns:1fr 1fr 1fr;
+   display:grid;
     flex-wrap:wrap;
     justify-content: center;
     padding-left:0px;
@@ -38,68 +38,57 @@
     padding:30px 30px 30px 30px; 
 }
 
-
-
 .accomodation_container{
     margin:50px;
 }
 
  li{
     list-style: none;
-    width:30%;
-    min-width:300px;
- }
-
- @media (min-width : 845px) and ( max-width: 1200px){
-    li{
-        width:45%;
-     }
- }
-
- @media (min-width : 651px) and ( max-width: 844px){
-    li{
-        width:40%;
-        min-width:200px;
-     }
-     .banniere{
-        margin:20px;
-        height:111px;
-        border-radius:10px;
-    }
-
-    .banniere_cover{
-        border-radius:10px;
-    }
-
-    .banniere_cover h1{
-        margin-left: 20px;
-    }
+    width:100%;
  }
 
 
- @media (max-width :650px) {
-    li{
-       min-width:100%;
-        
-     }
+ @media (max-width :991px) {
+    .accomodation_items{
+        grid-template-columns: 1fr 1fr;
+    }
+ }
+
+ .banner_title{
+    text-align: center;
+    padding:20px;
+ }
+ 
+ @media (max-width :767px) {
+  
+     .accomodation_items{
+        grid-template-columns: 1fr ;
+        background-color: #FFFFFF;
+        padding:0px;
+    }
      .accomodation_container{
         margin:20px;
     }
-    .accomodation_items{
-        gap:20px; 
-        padding:0px;
-        background-color: #ffffff;
-    }
+ 
     .banniere{
         margin:20px;
-        height:111px;
+        height:auto;
+        min-height:110px;
+        max-height:150px;
         border-radius:10px;
     }
 
     .banniere_cover{
         border-radius:10px;
+        height:100%;
+        max-height:150px;
+        min-height:111px;
     }
-    .banniere_cover h1{
-        margin:0 20px;
-    }
+    .banner_title{
+        text-align: center;
+        padding:0 8px;
+        font-size: 2.5rem;
+     }
+
+
  }

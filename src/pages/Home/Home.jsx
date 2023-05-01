@@ -6,7 +6,7 @@ function Home() {
   return (
     <main className={styles.home_container}>
       <div className={styles.banniere}>
-        <div className={styles.banniere_cover}><h1>Chez vous, partout et ailleurs</h1></div> 
+        <div className={styles.banniere_cover}><h1 className={styles.banner_title}>Chez vous, partout et ailleurs</h1></div> 
       </div>
       <article className ={styles.accomodation_container}>
         <ul className ={styles.accomodation_items}>
