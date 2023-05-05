@@ -12,7 +12,7 @@
     margin:0 auto;
 }
 
-.banniere{
+.banner{
     height:225px;
     background-image: url('../../assets/images/montagne.jpg');
     background-size:cover;
@@ -29,7 +29,7 @@
 }
 
 @media (max-width:767px) {
-    .banniere{
+    .banner{
         margin:0 20px;
     } 
     .title_collapse_apropos{

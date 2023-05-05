@@ -10,6 +10,7 @@ function Header() {
             <img src= { logo } alt ='logo de kasa'/>
           </div>
           <nav>
+             {/* Liens de navigation pour la page d'accueil et la page à propos */}
             <NavLink to="/"  className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
               Accueil
             </NavLink>
