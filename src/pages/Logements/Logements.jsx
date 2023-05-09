@@ -7,12 +7,9 @@ import Collapse from '../../components/Collapse/Collapse.jsx'
 import Slideshow from '../../components/Slideshow/Slideshow.jsx'
 import Rating from '../../components/Rating/Rating.jsx'
 
-function Logements() {
- // Effet de bord : remonter en haut de la page
-  useEffect(() => {
-    window.scrollTo(0, 0); 
-  }, []); 
 
+function Logements() {
+ 
  // Récupérer l'identifiant de logement à partir des paramètres d'URL
   const { id } = useParams()
 
