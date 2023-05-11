@@ -2,7 +2,7 @@
   color: rgba(255, 96, 96, 1);
   display:flex;
   justify-content: space-between;
-  align-items:baseline;
+  align-items:center;
   text-decoration: none;
   margin:50px;
 }

@@ -10,7 +10,7 @@ function Slideshow({ pictures, picturesLength }) {
 const prevImg = (index) => {
   // Si l'index est supérieur à 0, on affiche l'image précédente (index - 1)
   // Sinon, on affiche la dernière image du tableau (pictures.length - 1)
-  index > 0 ? setIndex(index - 1) : setIndex((index = pictures.length - 1))
+  index > 0 ? setIndex(index - 1) : setIndex(( pictures.length - 1))
 
 }
 
@@ -18,7 +18,7 @@ const prevImg = (index) => {
 const nextImg = (index) => {
   // Si l'index est inférieur au nombre total d'images - 1, on affiche l'image suivante (index + 1)
   // Sinon, on revient à la première image du tableau (index = 0)
-  index < picturesLength - 1 ? setIndex(index + 1) : setIndex((index = 0))
+  index < picturesLength - 1 ? setIndex(index + 1) : setIndex(0)
 }
 
   return (
