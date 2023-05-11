@@ -1,9 +1,21 @@
 .tags{
     background: rgba(255, 96, 96, 1);
-    padding: 5px 20px;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     border-radius:10px;
     color: rgba(255,255,255,1);
     margin:5px 10px 5px 0px;
     font-size : 0.875rem;
     font-weight:500;
+    width:115px;
+}
+
+@media (max-width :768px){
+    .tags {
+        width:84px;
+    }
+    
 }
