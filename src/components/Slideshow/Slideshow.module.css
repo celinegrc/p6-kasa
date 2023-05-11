@@ -46,13 +46,10 @@ button{
     margin-left:10px;
 }
 
-.arrow_right:hover{
+button:hover{
     cursor:pointer;
 }
 
-.arrow_left:hover{
-    cursor:pointer;
-}
 
 @media (max-width:767px){
     .carrousel_container{

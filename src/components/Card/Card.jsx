@@ -5,7 +5,7 @@ function Card({id, cover, title}) {
   return (
       <div className={styles.accomodation_card}>
         {/* Lien qui redirige vers la fiche détaillée du logement */}
-        <Link to={`/fiche-logement/${id}`}>
+        <Link  to={`/fiche-logement/${id}`}>
           <img className={styles.accomodation_img} src={cover} alt={title} />
           <h2 className={styles.accomodation_title}> {title} </h2>
         </Link>

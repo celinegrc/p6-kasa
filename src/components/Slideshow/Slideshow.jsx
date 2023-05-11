@@ -11,6 +11,7 @@ const prevImg = (index) => {
   // Si l'index est supérieur à 0, on affiche l'image précédente (index - 1)
   // Sinon, on affiche la dernière image du tableau (pictures.length - 1)
   index > 0 ? setIndex(index - 1) : setIndex((index = pictures.length - 1))
+
 }
 
 // fonction pour afficher l'image suivante

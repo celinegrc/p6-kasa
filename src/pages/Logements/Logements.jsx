@@ -1,6 +1,5 @@
 import  list  from '../../datas/accomodationsList.json'
 import { useParams, Navigate } from 'react-router-dom'
-import { useEffect } from 'react'
 import styles from './Logements.module.css'
 import Tag from '../../components/Tag/Tag.jsx'
 import Collapse from '../../components/Collapse/Collapse.jsx'
@@ -68,13 +67,13 @@ return (
       {/* Équipements du logement */}
       <div className={styles.collapse_equipment}>
         <Collapse 
-          collapseTitle={<div className={styles.logements_collapse_title}>Equipement</div>}
+          collapseTitle={<div className={styles.logements_collapse_title}>Equipements</div>}
           collapseDescription={
-            <div className={styles.equipment_container}>
+            <ul className={styles.equipment_container}>
               {equipements.map((equipment) => (
-                <p key={`${accomodation.id}-${equipment}`} className={styles.accomodation_equipments_list}>{equipment}</p>
+                <li key={`${accomodation.id}-${equipment}`} className={styles.accomodation_equipments_list}>{equipment}</li>
               ))}
-            </div>
+            </ul>
           }
         />
       </div>
