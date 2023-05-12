@@ -6,7 +6,6 @@
     list-style: none;
     height:340px;
     position:relative;
-    background: linear-gradient(rgb(255,255,255), rgb(255, 96, 96));
     border-radius:10px;
 }
 
@@ -24,17 +23,28 @@
     height:100%;
     object-fit:cover;
     border-radius:10px;
-    opacity: 0.75;
     transition: all 0.5s;
 }
 
-.accomodation_img:hover{
-    opacity: 1;
-    box-shadow: 0 0 15px 2px   rgb(158, 151, 151);
+.accomodation_card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius:10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    transition: all 0.3s;
+    pointer-events: none
 }
 
+.accomodation_card:hover::before {
+    opacity: 0;
+    cursor:pointer;
+}
 
-
+  
 @media (max-width :767px) {
     .accomodation_card{
         height:255px;
@@ -48,4 +58,3 @@
         padding:5px;
     } 
 }
-
